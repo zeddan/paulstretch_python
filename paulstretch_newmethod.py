@@ -207,9 +207,9 @@ print ("Paul's Extreme Sound Stretch (Paulstretch) - Python version 20141220")
 print ("new method: using onsets information")
 print ("by Nasca Octavian PAUL, Targu Mures, Romania\n")
 parser = OptionParser(usage="usage: %prog [options] input_wav output_wav")
-parser.add_option("-s", "--stretch", dest="stretch",help="stretch amount (1.0 = no stretch)",type="float",default=8.0)
-parser.add_option("-w", "--window_size", dest="window_size",help="window size (seconds)",type="float",default=0.25)
-parser.add_option("-t", "--onset", dest="onset",help="onset sensitivity (0.0=max,1.0=min)",type="float",default=10.0)
+parser.add_option("-s", "--stretch", dest="stretch",help="stretch amount (1.0 = no stretch), default=8.0",type="float",default=8.0)
+parser.add_option("-w", "--window_size", dest="window_size",help="window size (seconds), default=0.25",type="float",default=0.25)
+parser.add_option("-t", "--onset", dest="onset",help="onset sensitivity (0.0=max,1.0=min), default=10.0",type="float",default=10.0)
 (options, args) = parser.parse_args()
 
 
